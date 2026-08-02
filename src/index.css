@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream font-sans text-graphite antialiased;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto max-w-6xl px-6;
+  }
+  .eyebrow {
+    @apply font-mono text-xs font-bold uppercase tracking-[0.2em] text-rust-600;
+  }
+  .section-title {
+    @apply font-display text-3xl font-bold uppercase tracking-wide text-graphite sm:text-4xl;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-rust-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-cream transition hover:bg-rust-600;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border-2 border-graphite px-6 py-3 text-sm font-bold uppercase tracking-wide text-graphite transition hover:bg-graphite hover:text-cream;
+  }
+  .btn-on-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-racing-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-cream transition hover:bg-racing-400;
+  }
+  .tag-chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-racing-300 bg-racing-50 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wide text-racing-700;
+  }
+}
